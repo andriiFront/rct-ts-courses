@@ -1,6 +1,13 @@
+import { CourseList } from "./CourseLIst"
+import { Loader } from "./Loader"
+
 export const CoursePage = () => {
   
   return (
-    <div style={{border: '1px solid gray'}}>CoursePage</div>
+    <div className='borderBox'>
+      CoursePage
+      <CourseList /> 
+      <Loader /> 
+    </div>
   )
 }

@@ -3,8 +3,8 @@ import { CoursePage } from './course/CoursePage';
 
 function App() {
   return (
-    <div className="App">
-      Hello Andrii!!!
+    <div className="borderBox">
+      App
       <CoursePage />
     </div>
   );
