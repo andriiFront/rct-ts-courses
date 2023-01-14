@@ -3,8 +3,7 @@ import { CoursePage } from './course/CoursePage';
 
 function App() {
   return (
-    <div className="borderBox">
-      App
+    <div className="App">
       <CoursePage />
     </div>
   );
