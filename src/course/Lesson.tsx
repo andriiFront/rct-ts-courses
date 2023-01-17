@@ -13,7 +13,10 @@ const StyledForm = styled.form`
 `
 
 export const Lesson = (
-  { lesson }:{ lesson: CourseItem }
+  { lesson, onLessonChange }:{
+    lesson: CourseItem;
+    onLessonChange: (newState: CourseItem) => void;
+  }
 ) => {
   
   return (
@@ -41,8 +44,11 @@ export const Lesson = (
         <label>
           <input
             type="checkbox"
-            checked={true}
-            onChange={() => console.log('hello')}
+            checked={lesson?.completed ?? false}
+            onChange={(e) => onLessonChange({
+              ...lesson,
+              completed: e.target.checked
+            })}
           />
           Completed
         </label>

@@ -12,6 +12,7 @@ export type CourseItem = {
   prerequisite?: string[];
   hometask?: string[];
   note?: string;
+  completed?: boolean; 
 };
 
 export type CourseData = {
