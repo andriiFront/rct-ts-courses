@@ -1,10 +1,22 @@
 import { Lesson } from "./Lesson"
+import { CourseItem } from "../types"
 
-export const CourseList = () => {
+export const CourseList = (
+  { initialCourses }: { initialCourses: any[] }
+) => {
   
   return (
     <div>
-      <Lesson />
+      {initialCourses.map((lesson, index) => 
+        lesson.hidden 
+          ? null
+          : (
+            <Lesson 
+              key={lesson.name}
+              lesson={lesson}
+            />
+          )
+      )}
     </div>
   )
 }

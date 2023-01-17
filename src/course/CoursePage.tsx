@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { CourseList } from "./CourseLIst"
-import { Loader } from "./Loader"
+import { Loader } from "../ui/Loader"
+import data from "../data.json"
+
+console.log(data)
 
 const Page = styled.main`
   box-sizing: border-box;
@@ -12,7 +15,11 @@ export const CoursePage = () => {
   
   return (
     <Page>
-      {true ? <CourseList /> : <Loader /> }
+      {data?.title && <h1>{data?.title}</h1>}
+      {true 
+        ? <CourseList initialCourses={data.lessons} />
+        : <Loader /> 
+      }
     </Page>
   )
 }

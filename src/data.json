@@ -1,0 +1,48 @@
+{
+  "title": "React For Beginners - Free Course by Itera",
+  "lessons": [
+    {
+      "name": "about",
+      "title": "About the course",
+      "type": "Lecture",
+      "published": true,
+      "links": [
+        ["YouTube", "https://www.youtube.com/channel/UCg-txtmOEQ8BniR8008O1mA"],
+        ["Telegram", "https://t.me/reactbeginners"],
+        ["GitHub", "https://github.com/Drag13/react-learning-course-short"],
+        ["LinkedIn", "https://www.linkedin.com/in/vitalii-ruban/"],
+        ["Twitter", "https://twitter.com/drag137"]
+      ],
+      "hidden": true
+    },
+    {
+      "name": "react-intro",
+      "title": "What is React",
+      "type": "Lecture",
+      "shortSummary": "Introduction to React.JS, the idea and JSX",
+      "keyPoints": [
+        "The problem",
+        "What is the React",
+        "Three pillars of React",
+        "React - advantages and disadvantages",
+        "Why to learn React nowadays"
+      ],
+      "takeaways": [
+        "React - JavaScript library for building user interfaces",
+        "React uses JSX - HTMLish syntax to describe UI",
+        "Data is the single source of truth"
+      ],
+      "published": true,
+      "links": [
+        ["Documentation", "https://reactjs.org/docs/getting-started.html"],
+        ["React - source code", "https://github.com/facebook/react"],
+        ["React changelog", "https://github.com/facebook/react/blob/main/CHANGELOG.md"],
+        [
+          "Why React is a bad idea",
+          "https://blog.devgenius.io/react-costs-companies-a-lot-of-money-6bfa3e5cc6f4"
+        ]
+      ],
+      "youtube": "https://youtu.be/fQ_UNyQBiqg"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 import { Badge } from '../ui/Badge'
 import styled from "styled-components";
 import { BACKGROUND_ACCENTED } from '../ui/colors';
+import { CourseItem } from '../types'
 
 const StyledForm = styled.form`
   background-color: ${BACKGROUND_ACCENTED};
@@ -11,26 +12,28 @@ const StyledForm = styled.form`
   gap: 10px
 `
 
-export const Lesson = () => {
+export const Lesson = (
+  { lesson }:{ lesson: CourseItem }
+) => {
   
   return (
     <div style={{marginTop: '64px'}}>
       <h2>
-        {'React-lesson'}
+        {lesson.title}
         <Badge
           style={{verticalAlign: 'middle'}}
           tipe={'negative'}
         >
-          {'Published / Unpublished'}
+          {lesson.published ? 'Published' : 'Unpublished'}
         </Badge>
       </h2>
 
       <dl>
         <dt>Short summary</dt>
-        <dd>{'This lesson is about react...bla-bla-bla...'}</dd>
+        <dd>{lesson.shortSummary}</dd>
       </dl>
 
-      <a href={'https://www.youtube.com/watch?v=uiRHFI6A3iU'}>
+      <a href={lesson.youtube} target="_blank">
         Youtube link
       </a>
 
@@ -44,14 +47,14 @@ export const Lesson = () => {
           Completed
         </label>
 
-        <label htmlFor='lesson_form'>
+        <label htmlFor={lesson.name + "_form"}>
           Note for the course
         </label>
         <textarea
           name="note"
-          id="lesson_form"
+          id={lesson.name + "_form"}
           rows={5}
-          value={'alsdkfj'}
+          value={lesson.note}
           onChange={() => console.log('hello hello')}
         ></textarea>
         
