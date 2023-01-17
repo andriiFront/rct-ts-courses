@@ -1,18 +1,19 @@
-# Training app
-TAP **[PREVIEW LINK](_____)** TO SEE DEMO
+# Course app
+TAP **[PREVIEW LINK](https://andriifront.github.io/rct-ts-courses/)** TO SEE DEMO
 
 
 ## Technologies
  - REACT
+ - TYPESCRIPT
+ - STYLED-COMPONENTS
 
 
 ## Code Description and Features
-A training app ....
+This app displays the list of courses from the remote API? also allows you to make changes and saves in local storage
 
 
 ## Links
-Videocourse: [link](____)
-WebPage: [link](__)
+WebPage: [link](https://andriifront.github.io/rct-ts-courses/)
 Code: [link](https://github.com/andriiFront/rct-ts-courses)
 
 
