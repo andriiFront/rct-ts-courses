@@ -8,6 +8,8 @@ export const CourseList = (
 
   const [courses, setCourses] = useState<CourseItem[]>(initialCourses)
   
+console.log (courses)
+
   return (
     <div>
       {courses.map((lesson, index) => 

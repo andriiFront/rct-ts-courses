@@ -61,7 +61,10 @@ export const Lesson = (
           id={lesson.name + "_form"}
           rows={5}
           value={lesson.note}
-          onChange={() => console.log('hello hello')}
+          onChange={(e) => onLessonChange({
+            ...lesson,
+            note: e.target.value
+          })}
         ></textarea>
         
       </StyledForm>
