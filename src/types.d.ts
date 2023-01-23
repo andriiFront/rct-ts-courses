@@ -19,3 +19,19 @@ export type CourseData = {
   title: string;
   lessons: CourseItem[];
 }
+
+type AsyncStatusLoading = {
+  status: 'loading';
+}
+
+type AsyncStatusFailed = {
+  status: 'failed';
+  error: Error
+}
+
+type AsyncStatusOk<T> = {
+  status: 'ok';
+  data: T
+}
+
+export type AsyncStatus<T> = AsyncStatusFailed | AsyncStatusLoading | AsyncStatusOk<T>

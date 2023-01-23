@@ -9,15 +9,21 @@ const Page = styled.main`
   width: 100%;
 `
 export const CoursePage = () => {
-  const { data } = useCourses();
+  const { response } = useCourses();
   
+  if(response.status === 'loading') {
+    return <Loader />
+  }
+  
+  if(response.status === 'failed') {
+    console.log(response)
+    return <>Failed {response.error.message}, {response.error.cause}</>
+  }
+
   return (
     <Page>
-      {data?.title && <h1>{data?.title}</h1>}
-      {data?.lessons 
-        ? <CourseList initialCourses={data.lessons} />
-        : <Loader /> 
-      }
+      <h1>{response.data.title}</h1>
+      <CourseList initialCourses={response.data.lessons} />
     </Page>
   )
 }
