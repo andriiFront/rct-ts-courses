@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rct-ts-courses/static/css/main.337316b6.css",
-    "main.js": "/rct-ts-courses/static/js/main.c1f99971.js",
+    "main.js": "/rct-ts-courses/static/js/main.1b24cebb.js",
     "index.html": "/rct-ts-courses/index.html",
     "main.337316b6.css.map": "/rct-ts-courses/static/css/main.337316b6.css.map",
-    "main.c1f99971.js.map": "/rct-ts-courses/static/js/main.c1f99971.js.map"
+    "main.1b24cebb.js.map": "/rct-ts-courses/static/js/main.1b24cebb.js.map"
   },
   "entrypoints": [
     "static/css/main.337316b6.css",
-    "static/js/main.c1f99971.js"
+    "static/js/main.1b24cebb.js"
   ]
 }
