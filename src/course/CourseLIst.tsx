@@ -6,15 +6,8 @@ import { useCourseStorage } from '../hooks/useCourseStorage'
 export const CourseList = (
   { initialCourses }: { initialCourses: any[] }
 ) => {
-
-
-  console.log('initialCourses ===> ', initialCourses)
-  
   const { getCourseFromStorage, setCourseToStorage } = useCourseStorage()
   const storageCourses = getCourseFromStorage()
-  console.log('storageCourses ===> ', storageCourses)
-
-
   const [courses, setCourses] = useState<CourseItem[]>(
     getCourseFromStorage() ?? initialCourses
   )
@@ -22,8 +15,6 @@ export const CourseList = (
   useEffect(() => {
     setCourseToStorage(courses)
   }, [courses])
-
-  console.log(courses)
   
   return (
     <div>

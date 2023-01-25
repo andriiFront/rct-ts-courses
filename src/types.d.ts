@@ -1,4 +1,4 @@
-export type CourseItem = {
+export type CourseItemDto = {
   name: string;
   title: string;
   type: "Lecture" | "Workshop";
@@ -14,6 +14,28 @@ export type CourseItem = {
   note?: string;
   completed?: boolean; 
 };
+
+export type CourseItem = {
+  name: string;
+  title: string;
+  type: "Lecture" | "Workshop";
+  published?: boolean;
+  links?: { title: string; url: string }[];
+  hidden?: boolean;
+  shortSummary?: string;
+  keyPoints: string[];
+  takeaways: string[];
+  youtube?: string;
+  prerequisite: string[];
+  hometask: string[];
+  note?: string;
+  completed?: boolean; 
+};
+
+export type CourseDataDto = {
+  title: string;
+  lessons: CourseItemDto[];
+}
 
 export type CourseData = {
   title: string;

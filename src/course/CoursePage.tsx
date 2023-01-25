@@ -16,7 +16,6 @@ export const CoursePage = () => {
   }
   
   if(response.status === 'failed') {
-    console.log(response)
     return <>Failed {response.error.message}, {response.error.cause}</>
   }
 
